@@ -1,0 +1,68 @@
+{%include 'ownerheader.html' %}
+<br><br><br>
+
+
+<h2 align="center">PARKING LOCATION REGISTRATION</h2>
+
+<br><br>
+<center>
+	<form method="post">
+		<table class="table" style="width: 800px;">
+			<tr>
+				<th>Location Name</th>
+				<td><input type="text" name="lname" required class="form-control" pattern="[A-za-z ]+$"></td>
+			</tr>
+			<tr>
+				<th>Place</th>
+				<td><input type="text" name="plc" required class="form-control" pattern="[A-za-z ]+$"></td>
+			</tr>
+			<tr>
+				<th>Description</th>
+				<td><input type="text" name="des" required class="form-control" pattern="[A-za-z ]+$"></td>
+			</tr>
+			<tr>
+				<th style="font-size: 16px; color: rgb(11, 11, 11);">Latitude</th>
+				<td style="color: black;"><input type="text" name="lati" id="slati"  class="form-control" required></td>	
+				
+				<td><a onclick="myFunction()"  class="btn btn-danger" required>View Map</a></td>
+			</tr>
+			
+			<tr>
+				<th style="font-size: 16px; color: rgb(14, 14, 14);">Longitude</th>
+				<td style="color: black;"><input type="text" name="longi" id="elongi"  required  class="form-control"></td>	
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" name="submit" value="Register" class="btn btn-success"></td>
+			</tr>	
+		</table>
+	</form>
+	<div align="center">
+		<td>
+			<div id="dvMap" style="width: 600px; height: 500px;"></div>
+		</td>
+	</div>	
+	
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD3MPnSnyWwNmpnVEFkaddVvy_GWtxSejs&sensor=false"></script>
+	<script type="text/javascript">
+	// window.onload = function () {
+	function myFunction() {
+	var mapOptions = {
+	center: new google.maps.LatLng(9.9763482, 76.286272),
+	zoom: 14,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var infoWindow = new google.maps.InfoWindow();
+	var latlngbounds = new google.maps.LatLngBounds();
+	var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+	google.maps.event.addListener(map, 'click', function (e) {
+	alert("Latitude: " + e.latLng.lat() + "\r\nLongitude: " + e.latLng.lng());
+	document.getElementById('slati').value = e.latLng.lat();
+	document.getElementById('elongi').value = e.latLng.lng();
+	
+	});
+	}
+	</script>	
+		</table>		
+	</form>
+</center>
+{% include 'footer.html' %}

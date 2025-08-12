@@ -1,0 +1,34 @@
+{%include 'adminheader.html' %}
+<br><br><br>
+
+<h2 align="center">VIEW COMPLAINTS</h2>
+<br><br>
+    {% if data['com'] %}
+<center>
+    <table class="table">
+        <tr>
+            <th>Sl.No</th>
+            <th>User</th>
+            <th>Complaint</th>
+            <th>Reply</th>
+            <th>Date</th>
+        </tr>
+        {% for i in  data['com'] %}
+        <tr> 
+            <td>{{loop.index}}</td>
+            <td>{{ i['first_name']}} {{i['last_name']}}</td>
+            <td>{{ i['description'] }}</td>
+            <td>{{ i['reply'] }}</td>
+            <td>{{ i['date'] }}</td>
+            <td><a href="/admsendrep?cid={{i['complaint_id']}}">Reply</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+{% else %}
+<center>
+<h2>No Complaints Added</h2>
+</center>
+{% endif %}
+<br><br><br>
+{%include 'footer.html' %}

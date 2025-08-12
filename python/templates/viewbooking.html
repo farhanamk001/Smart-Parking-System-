@@ -1,0 +1,46 @@
+{%include 'ownerheader.html' %}
+<br><br><br>
+
+
+<h2 align="center">VIEW BOOKINGS</h2>
+<br><br>
+{% if data['vie'] %}
+<center>
+	<form method="post">
+	<table style="width: 950px;" class="table">
+		<tr>
+			<th>Sl.No</th>
+			<th>User</th>
+			<th>Vehicle No</th>
+            <th>Place</th>
+            <th>Location</th>
+            <th>Amount</th>
+            <th>Status</th>
+			<th>Date</th>
+		</tr>
+		{% for i in data['vie'] %}
+
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{i['first_name']}} {{i['last_name']}}</td>
+			<td>{{i['vehicle_no']}}</td>
+          
+            <td>{{i['place']}}</td>
+            <td>{{i['location_name']}}</td>
+            <td>{{i['amount']}}</td>
+			<td>{{i['status']}}</td>
+			<td>{{i['date']}}</td>
+		</tr>
+
+		{% endfor %}
+		
+	</table>
+	</form>
+</center>
+{% else %}
+<center>
+<h2>No Booking Informations Yet</h2>
+</center>
+{% endif %}
+<br><br><br>
+{%include 'footer.html' %}

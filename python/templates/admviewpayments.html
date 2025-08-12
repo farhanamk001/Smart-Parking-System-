@@ -1,0 +1,39 @@
+{%include 'adminheader.html' %}
+<br><br><br>
+
+<h2 align="center">VIEW PAYMENTS</h2>
+
+<br><br>
+{% if data['pay'] %}
+<center>
+	<form method="post">
+	<table style="width: 500px;" class="table">
+		<tr>
+			<th>Sl.No</th>
+			<th>User</th>
+            <th>Amount</th>
+            <th>Number plate</th>
+			<th>Date</th>
+		</tr>
+		{% for i in data['pay'] %}
+
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{i['first_name']}} {{i['last_name']}}</td>
+            <td>{{i['amount']}}</td>
+            <td>{{i['number_plate']}}</td>
+            <td>{{i['date']}}</td>
+		</tr>
+
+		{% endfor %}
+		
+	</table>
+	</form>
+</center>
+{% else %}
+<center>
+<h2>No Payment Records</h2>
+</center>
+{% endif %}
+<br><br><br>
+{%include 'footer.html' %}

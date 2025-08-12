@@ -1,0 +1,49 @@
+{%include 'adminheader.html' %}
+<br><br><br>
+
+
+<h2 align="center">VIEW USERS</h2>
+<br><br>
+{% if data['vie'] %}
+<center>
+	<form method="post">
+	<table style="width: 850px;" class="table">
+		<tr>
+			<th>Sl.No</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>House Name</th>
+			<th>Place</th>
+            <th>Pincode</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Phone</th>
+            <th>Email</th>
+		</tr>
+		{% for i in data['vie'] %}
+
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{i['first_name']}}</td>
+            <td>{{i['last_name']}}</td>
+            <td>{{i['house_name']}}</td>
+            <td>{{i['place']}}</td>
+            <td>{{i['pincode']}}</td>
+            <td>{{i['latitude']}}</td>
+            <td>{{i['longitude']}}</td>
+			<td>{{i['phone']}}</td>
+			<td>{{i['email']}}</td>
+		</tr>
+
+		{% endfor %}
+		
+	</table>
+	</form>
+</center>
+{% else %}
+<center>
+<h2>No Registered Users</h2>
+</center>
+{% endif %}
+<br><br><br>
+{%include 'footer.html' %}

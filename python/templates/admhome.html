@@ -1,0 +1,1901 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise AI v0.01, ai.mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="/static/assets/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="Smart Car Parking System allows efficient car parking with user, admin, and owner functionalities. Users can select and book slots using QR codes, make payments, while owners can view payment and booking details. Admin manages all.">
+
+  <title>Smart Parking Solution</title>
+  <link rel="stylesheet" href="/static/assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="/static/assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="/static/assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="/static/assets/animatecss/animate.css">
+  <link rel="stylesheet" href="/static/assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap"></noscript>
+  <link rel="preload" as="style" href="/static/assets/mobirise/css/additional.css"><link rel="stylesheet" href="/static/assets/mobirise/css/additional.css" type="text/css">
+  
+  
+
+  <style>:root{ --background: #FEEFEC; --dominant-color: #F55D3E; --primary-color: #4D5E85; --secondary-color: #ECC84D; --success-color: #20AC6B; --danger-color: #AE1E2C; --warning-color: #CC9900; --info-color: #0AA3C2; --background-text: #000000; --dominant-text: #FFFFFF; --primary-text: #FFFFFF; --secondary-text: #000000; --success-text: #FFFFFF; --danger-text: #FFFFFF; --warning-text: #000000; --info-text: #FFFFFF;}</style>
+</head>
+<body>
+
+
+    <style>
+.cid-u1jjZn0aWT  {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+}
+.cid-u1jjZn0aWT  .dropdown-item:before {
+  font-family: Moririse2 !important;
+  content: "\e966";
+  display: inline-block;
+  width: 0;
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  margin-right: 0.5rem;
+  line-height: 1;
+  font-size: inherit;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+  transform: scale(0, 1);
+  transition: all 0.25s ease-in-out;
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn0aWT  .navbar-toggler {
+    transform: scale(0.8);
+  }
+}
+.cid-u1jjZn0aWT  .navbar-brand {
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 0;
+  padding: 10px 0;
+  transition: all 0.3s;
+  word-break: break-word;
+  z-index: 1;
+}
+.cid-u1jjZn0aWT  .navbar-brand img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.cid-u1jjZn0aWT  .navbar-brand .navbar-caption {
+  line-height: inherit !important;
+}
+.cid-u1jjZn0aWT  .navbar-brand .navbar-logo a {
+  outline: none;
+}
+.cid-u1jjZn0aWT  .navbar-nav {
+  margin: auto;
+  margin-left: 0;
+  margin-left: auto;
+}
+.cid-u1jjZn0aWT  .navbar-nav .nav-item {
+  padding: 0 !important;
+  transition: 0.3s all !important;
+}
+.cid-u1jjZn0aWT  .navbar-nav .nav-item .nav-link {
+  padding: 16px !important;
+  margin: 0 !important;
+  border-radius: 1rem !important;
+  transition: 0.3s all !important;
+}
+.cid-u1jjZn0aWT  .navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(27, 31, 10, 0.06);
+}
+.cid-u1jjZn0aWT  .navbar-nav .open .nav-link::after {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  .cid-u1jjZn0aWT  .navbar-nav .open .nav-link::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    top: 100%;
+    background: transparent;
+    position: absolute;
+  }
+}
+.cid-u1jjZn0aWT  .navbar-nav .dropdown-item {
+  padding: 12px !important;
+  border-radius: 0.5rem !important;
+  margin: 0 8px !important;
+  transition: 0.3s all !important;
+}
+.cid-u1jjZn0aWT  .navbar-nav .dropdown-item:hover {
+  background-color: rgba(27, 31, 10, 0.06);
+}
+@media (min-width: 992px) {
+  .cid-u1jjZn0aWT  .navbar-nav {
+    padding-left: 1.5rem;
+  }
+}
+.cid-u1jjZn0aWT  .nav-link {
+  width: fit-content;
+  position: relative;
+}
+.cid-u1jjZn0aWT  .navbar-logo {
+  margin: 0 !important;
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn0aWT  .navbar-logo {
+    padding-left: 0;
+  }
+}
+.cid-u1jjZn0aWT  .navbar-caption {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn0aWT  .nav-dropdown {
+    padding-bottom: 0.5rem;
+  }
+}
+.cid-u1jjZn0aWT  .nav-dropdown .link.dropdown-toggle::after {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  transition: 0.3s all;
+}
+.cid-u1jjZn0aWT  .container {
+  display: flex;
+  height: 90px;
+  padding: 0.5rem 0.6rem;
+  flex-wrap: nowrap;
+  background: white !important;
+  left: 0;
+  right: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100vw;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
+}
+@media (max-width: 992px) {
+  .cid-u1jjZn0aWT  .container {
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn0aWT  .container {
+    width: 95%;
+    height: 56px !important;
+    padding-right: 1rem;
+    margin-top: 0rem;
+  }
+}
+.cid-u1jjZn0aWT  .iconfont-wrapper {
+  color: #000000 !important;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+.cid-u1jjZn0aWT  .dropdown-menu {
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 12px 4px !important;
+  border-radius: 1.5rem;
+  transition: 0.3s all !important;
+  min-width: auto;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+.cid-u1jjZn0aWT  .nav-item:focus,
+.cid-u1jjZn0aWT  .nav-link:focus {
+  outline: none;
+}
+.cid-u1jjZn0aWT  .dropdown .dropdown-menu .dropdown-item {
+  width: auto;
+  transition: all 0.25s ease-in-out;
+}
+.cid-u1jjZn0aWT  .dropdown .dropdown-menu .dropdown-item::after {
+  right: 0.5rem;
+}
+.cid-u1jjZn0aWT  .dropdown .dropdown-menu .dropdown-item .mbr-iconfont {
+  margin-right: 0.5rem;
+  vertical-align: sub;
+}
+.cid-u1jjZn0aWT  .dropdown .dropdown-menu .dropdown-item .mbr-iconfont:before {
+  display: inline-block;
+  transform: scale(1, 1);
+  transition: all 0.25s ease-in-out;
+}
+.cid-u1jjZn0aWT  .collapsed .dropdown-menu .dropdown-item:before {
+  display: none;
+}
+.cid-u1jjZn0aWT  .collapsed .dropdown .dropdown-menu .dropdown-item {
+  padding: 0.235em 1.5em 0.235em 1.5em !important;
+  transition: none;
+  margin: 0 !important;
+}
+.cid-u1jjZn0aWT  .navbar {
+  min-height: 90px;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.cid-u1jjZn0aWT  .navbar.opened {
+  transition: all 0.3s;
+}
+.cid-u1jjZn0aWT  .navbar .dropdown-item {
+  padding: 0.5rem 1.8rem;
+}
+.cid-u1jjZn0aWT  .navbar .navbar-logo img {
+  min-width: 6rem;
+  object-fit: cover;
+}
+.cid-u1jjZn0aWT  .navbar .navbar-collapse {
+  z-index: 1;
+  justify-content: flex-end;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed {
+  justify-content: center;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed .nav-item .nav-link::before {
+  display: none;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed.opened .dropdown-menu {
+  top: 0;
+}
+@media (min-width: 992px) {
+  .cid-u1jjZn0aWT  .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3rem);
+  }
+}
+.cid-u1jjZn0aWT  .navbar.collapsed .dropdown-menu .dropdown-submenu {
+  left: 0 !important;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed .dropdown-menu .dropdown-item:after {
+  right: auto;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  border-top: 0.35em solid;
+  border-right: 0.35em solid transparent;
+  border-left: 0.35em solid transparent;
+  border-bottom: 0;
+  top: 41%;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed ul.navbar-nav li {
+  margin: auto;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed .dropdown-menu .dropdown-item {
+  padding: 0.25rem 1.5rem;
+  text-align: center;
+}
+.cid-u1jjZn0aWT  .navbar.collapsed .icons-menu {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn0aWT  .navbar {
+    min-height: 72px;
+  }
+  .cid-u1jjZn0aWT  .navbar .navbar-logo img {
+    height: 2.5rem !important;
+    min-width: 2.5rem !important;
+  }
+}
+@media (max-width: 991px) {
+  .cid-u1jjZn0aWT  .navbar .nav-item .nav-link::before {
+    display: none;
+  }
+  .cid-u1jjZn0aWT  .navbar.opened .dropdown-menu {
+    top: 0;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 40%;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem !important;
+    text-align: center;
+  }
+  .cid-u1jjZn0aWT  .navbar .navbar-brand {
+    flex-shrink: initial;
+    flex-basis: auto;
+    word-break: break-word;
+    padding-right: 10px;
+  }
+  .cid-u1jjZn0aWT  .navbar .navbar-toggler {
+    flex-basis: auto;
+  }
+  .cid-u1jjZn0aWT  .navbar .icons-menu {
+    padding-left: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+.cid-u1jjZn0aWT  .navbar.navbar-short .navbar-logo img {
+  height: 2rem;
+}
+.cid-u1jjZn0aWT  .dropdown-item.active,
+.cid-u1jjZn0aWT  .dropdown-item:active {
+  background-color: transparent;
+}
+.cid-u1jjZn0aWT  .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+.cid-u1jjZn0aWT  .nav-dropdown .link.dropdown-toggle {
+  margin-right: 1.667em;
+}
+.cid-u1jjZn0aWT  .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+  margin-right: 0;
+  padding: 0.667em 1.667em;
+}
+.cid-u1jjZn0aWT  .navbar.navbar-expand-lg .dropdown .dropdown-menu {
+  background: #ffffff;
+}
+.cid-u1jjZn0aWT  .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+  margin: 0;
+  left: 105%;
+  transform: none;
+  top: -12px;
+}
+.cid-u1jjZn0aWT  .navbar .dropdown.open > .dropdown-menu {
+  display: flex;
+}
+.cid-u1jjZn0aWT  ul.navbar-nav {
+  flex-wrap: wrap;
+}
+.cid-u1jjZn0aWT  .navbar-buttons {
+  text-align: center;
+  min-width: 140px;
+}
+@media (max-width: 992px) {
+  .cid-u1jjZn0aWT  .navbar-buttons {
+    text-align: left;
+  }
+}
+.cid-u1jjZn0aWT  button.navbar-toggler {
+  outline: none;
+  width: 31px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  align-self: center;
+}
+.cid-u1jjZn0aWT  button.navbar-toggler .hamburger span {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 2px;
+  border-right: 5px;
+  background-color: #000000;
+}
+.cid-u1jjZn0aWT  button.navbar-toggler .hamburger span:nth-child(1) {
+  top: 0;
+  transition: all 0.2s;
+}
+.cid-u1jjZn0aWT  button.navbar-toggler .hamburger span:nth-child(2) {
+  top: 8px;
+  transition: all 0.15s;
+}
+.cid-u1jjZn0aWT  button.navbar-toggler .hamburger span:nth-child(3) {
+  top: 8px;
+  transition: all 0.15s;
+}
+.cid-u1jjZn0aWT  button.navbar-toggler .hamburger span:nth-child(4) {
+  top: 16px;
+  transition: all 0.2s;
+}
+.cid-u1jjZn0aWT  nav.opened .hamburger span:nth-child(1) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all 0.2s;
+}
+.cid-u1jjZn0aWT  nav.opened .hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  transition: all 0.25s;
+}
+.cid-u1jjZn0aWT  nav.opened .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  transition: all 0.25s;
+}
+.cid-u1jjZn0aWT  nav.opened .hamburger span:nth-child(4) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all 0.2s;
+}
+.cid-u1jjZn0aWT  .navbar-dropdown {
+  padding: 0 1rem;
+}
+.cid-u1jjZn0aWT  a.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cid-u1jjZn0aWT  .icons-menu {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .cid-u1jjZn0aWT  .icons-menu {
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .cid-u1jjZn0aWT  .navbar {
+    height: 70px;
+  }
+  .cid-u1jjZn0aWT  .navbar.opened {
+    height: auto;
+  }
+  .cid-u1jjZn0aWT  .nav-item .nav-link:hover::before {
+    width: 175%;
+    max-width: calc(100% + 2rem);
+    left: -1rem;
+  }
+}
+.cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu {
+  display: none;
+  width: max-content;
+  max-width: 500px !important;
+  transform: translateX(-50%);
+  top: calc(100% + 20px);
+  left: 50%;
+}
+.cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown-item {
+  line-height: 1 !important;
+}
+.cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item {
+  align-items: center;
+  display: flex;
+  height: max-content !important;
+  min-height: max-content !important;
+}
+.cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item::after {
+  display: inline-block;
+  position: static;
+  margin-left: 0.5rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  transition: 0.3s all;
+  transform: rotate(-90deg);
+}
+.cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown.open .dropdown-item::after {
+  transform: rotate(0deg);
+}
+.cid-u1jjZn0aWT  .mbr-section-btn {
+  margin: -0.6rem -0.6rem;
+}
+.cid-u1jjZn0aWT  .navbar-toggler {
+  margin-left: 12px;
+  margin-right: 8px;
+  order: 1000;
+}
+@media (max-width: 991px) {
+  .cid-u1jjZn0aWT  .navbar-brand {
+    margin-right: auto;
+  }
+  .cid-u1jjZn0aWT  .navbar-collapse {
+    z-index: -1 !important;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background: #ffffff;
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(8px);
+  }
+  .cid-u1jjZn0aWT  .navbar-nav .nav-item .nav-link::after {
+    margin-left: 10px;
+  }
+  .cid-u1jjZn0aWT  .navbar-nav .dropdown-item:hover {
+    background-color: rgba(27, 31, 10, 0.06);
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu {
+    max-width: 100% !important;
+    transform: translateX(0);
+    top: 10px;
+    left: 0;
+    padding: 8px !important;
+    border-radius: 1rem;
+    background-color: rgba(27, 31, 10, 0.04) !important;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown-item {
+    padding: 8px !important;
+    line-height: 1 !important;
+    margin-bottom: 4px !important;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item {
+    align-items: center;
+    display: flex;
+    height: max-content !important;
+    min-height: max-content !important;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item::after {
+    display: inline-block;
+    position: static;
+    margin-left: 0.5rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    transition: 0.3s all;
+    transform: rotate(0deg);
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown.open .dropdown-item::after {
+    transform: rotate(180deg);
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown > .dropdown-menu .dropdown-submenu {
+    position: static;
+    width: 100%;
+    max-width: 100% !important;
+    transform: translateX(0) !important;
+    top: 0;
+    left: 0;
+    padding: 8px !important;
+    border-radius: 1rem;
+    background-color: rgba(27, 31, 10, 0.04) !important;
+  }
+  .cid-u1jjZn0aWT  .navbar .dropdown.open > .dropdown-menu {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 575px) {
+  .cid-u1jjZn0aWT  .navbar-collapse {
+    padding: 1rem;
+  }
+}
+</style>
+
+<section class="menu menu2 cid-u1jjZn0aWT" once="menu" id="menu-5-u1jjZn0aWT">
+  <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+    <div class="container">
+      <div class="navbar-brand">
+				<span class="navbar-caption-wrap">
+          <a class="navbar-caption text-black display-4" href="">ParkSmart</a>
+        </span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-bs-toggle="collapse" data-target="#navbarSupportedContent"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      
+<section class="menu menu2 cid-u1jjZn0aWT" once="menu" id="menu-5-u1jjZn0aWT">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg"> 
+  <div class="container">
+         <ul class="navbar-nav mr-auto" data-app-modern-menu="true">
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8"  href="/admin_home">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/parkregister"
+               aria-expanded="false">Parking Registration</a>
+           </li>
+         
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/slotregister">Slot Registration</a>
+           </li>
+           <!-- <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/scanner">Scan QR Code</a>
+           </li> -->
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/admviewslotsta">Slot Status</a>
+           </li>  
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/admviewusers">Users</a>
+           </li> 
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/admviewbookings">Bookings</a>
+           </li> 
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/admviewpay">Payments</a>
+           </li> 
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/admviewcom">Complaints</a>
+           </li> 
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/addlaws">Law Details</a>
+           </li>       
+           <li class="nav-item">
+             <a class="nav-link link text-black display-8" href="/">Logout</a>
+           </li>    
+         </ul>
+     
+      </div>
+    </div>
+  </nav>
+</section>
+    <style>
+.cid-u1jjZn0HZu {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .cid-u1jjZn0HZu {
+    align-items: flex-end;
+  }
+  .cid-u1jjZn0HZu .row {
+    justify-content: flex-start;
+  }
+  .cid-u1jjZn0HZu .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-u1jjZn0HZu .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn0HZu {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-u1jjZn0HZu .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-u1jjZn0HZu .content-wrap {
+    width: 100%;
+  }
+}
+.cid-u1jjZn0HZu .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u1jjZn0HZu .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #000000;
+}
+.cid-u1jjZn0HZu .mbr-section-title,
+.cid-u1jjZn0HZu .mbr-section-subtitle {
+  text-align: left;
+  color: var(--dominant-color, #ffc091);
+}
+.cid-u1jjZn0HZu .mbr-text,
+.cid-u1jjZn0HZu .mbr-section-btn {
+  text-align: left;
+}
+</style>
+<section class="header18 cid-u1jjZn0HZu mbr-fullscreen" data-bg-video="static/assets/images/car.mp4" id="hero-15-u1jjZn0HZu">
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-8">
+        <h1
+          class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1 animate__animated animate__delay-1s animate__fadeInUp">
+          <strong style="color: white;">Welcome to <br>Smart Car Parking</strong>
+        </h1>
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7 animate__animated animate__delay-1s animate__fadeInUp">Revolutionizing Parking Management with Smart Technology</p>
+        <div class="mbr-section-btn">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <style>
+.cid-u1jjZn0sNf {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: transparent;
+}
+.cid-u1jjZn0sNf .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u1jjZn0sNf .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u1jjZn0sNf .card-wrapper {
+  background: white;
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn0sNf .card-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-u1jjZn0sNf .card-wrapper {
+    padding: 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-u1jjZn0sNf .card-wrapper {
+    padding: 4rem;
+  }
+}
+.cid-u1jjZn0sNf .mbr-text,
+.cid-u1jjZn0sNf .mbr-section-btn {
+  color: #000000;
+  text-align: left;
+}
+.cid-u1jjZn0sNf .card-title,
+.cid-u1jjZn0sNf .card-box {
+  text-align: left;
+  color: #000000;
+}
+</style>
+<section class="article07 cid-u1jjZn0sNf" id="about-us-7-u1jjZn0sNf">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-md-12 col-lg-10">
+        <div class="card-wrapper">
+          <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+            <strong>Welcome to ParkSmart</strong>
+          </h3>
+          <div class="row card-box align-left">
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <p class="mbr-text mbr-fonts-style display-7">
+                Experience the future of parking with ParkSmart, where cutting-edge technology meets seamless convenience. Say goodbye to parking woes and hello to hassle-free parking solutions.
+                </p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <p class="mbr-text mbr-fonts-style display-7">
+                  Our smart car parking system is designed to cater to the needs of users, owners, and administrators, ensuring a smooth and efficient parking experience for all.
+                </p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <p class="mbr-text mbr-fonts-style display-7">
+                  With ParkSmart, you can book your parking slot, make payments, and enjoy a stress-free parking experience like never before.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% if data['loc'] %}
+<section id="parkingLocations" class="menu menu2 cid-u1jjZn0aWT" once="menu" id="menu-5-u1jjZn0aWT">
+<center>
+    <h1 style="background-color: #ffd4ed;">Parking Locations</h1><br>
+    <table class="table">
+        <tr>
+            <th>Sl.No</th>
+            <th>Location</th>
+            <th>Place</th>
+            <th>Description</th>
+            <th>Type</th>
+        </tr>
+        {% for i in  data['loc'] %}
+            <tr> 
+                <td>{{ loop.index }}</td>
+                <td>{{ i['location_name'] }}</td>
+                <td>{{ i['place'] }}</td>
+                <td>{{ i['loc_desc'] }}</td>
+                <td>{{ i['type'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</center>
+</section>
+{% endif %}
+    <style>
+    .cid-u1jjZn0TKR {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        background-color: #ffffff;
+    }
+
+    .cid-u1jjZn0TKR .mbr-fallback-image.disabled {
+        display: none;
+    }
+
+    .cid-u1jjZn0TKR .mbr-fallback-image {
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .cid-u1jjZn0TKR .item-wrapper {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 767px) {
+        .cid-u1jjZn0TKR .item-wrapper {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .cid-u1jjZn0TKR .mbr-section-title {
+        text-align: center;
+    }
+
+    .cid-u1jjZn0TKR .mbr-section-subtitle {
+        text-align: center;
+    }
+
+    .cid-u1jjZn0TKR .image-wrapper {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .cid-u1jjZn0TKR .image-wrapper img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .cid-u1jjZn0TKR .content-head {
+        max-width: 800px;
+    }
+
+    .cid-u1jjZn0TKR .img-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cid-u1jjZn0TKR .card-title {
+        text-align: center;
+    }
+
+    .cid-u1jjZn0TKR .card-text {
+        text-align: center;
+    }
+
+    .cid-u1jjZn0TKR .link {
+        text-align: center;
+    }
+    
+</style>
+<section class="features16 cid-u1jjZn0TKR" id="features-3-u1jjZn0TKR">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="card-box">
+                        <div class="img-box">
+                            <div class="image-wrapper mb-3">
+                                <img src="/static/assets/images/photo-1622204861143-604843f106f3.jpeg">
+                            </div>
+                        </div>
+                        <h4 class="card-title mbr-fonts-style mb-0 display-5">
+                            <strong>Efficient Parking</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-2 display-7">
+                            Optimize parking space with smart slot selection.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="card-box"> 
+                        <div class="img-box">
+                            <div class="image-wrapper mb-3">
+                                <img src="/static/assets/images/photo-1616101746997-66ec55fa004f.jpeg">
+                            </div>
+                        </div>
+                        <h4 class="card-title mbr-fonts-style mb-0 display-5">
+                            <strong>Booking</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-2 display-7">
+                            Book your slot and make payments with ease.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="card-box">
+                        <div class="img-box">
+                            <div class="image-wrapper mb-3">
+                                <img src="/static/assets/images/photo-1526626607369-f89fe1ed77a9.jpeg">
+                            </div>
+                        </div>
+                        <h4 class="card-title mbr-fonts-style mb-0 display-5">
+                            <strong>Real-time Management</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-2 display-7">
+                            Owners and admins can monitor parking activities in real-time.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+  .cid-u1jjZn1JXS {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #ffffff;
+  }
+  .cid-u1jjZn1JXS .item-subtitle {
+    line-height: 1.2;
+    color: #000000;
+    text-align: center;
+  }
+  .cid-u1jjZn1JXS img,
+  .cid-u1jjZn1JXS .item-img {
+    width: 100%;
+    height: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .cid-u1jjZn1JXS .item:focus,
+  .cid-u1jjZn1JXS span:focus {
+    outline: none;
+  }
+  .cid-u1jjZn1JXS .item {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 767px) {
+    .cid-u1jjZn1JXS .item {
+      margin-bottom: 1rem;
+    }
+  }
+  .cid-u1jjZn1JXS .item-wrapper {
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .cid-u1jjZn1JXS .mbr-section-btn {
+    margin-top: auto !important;
+  }
+  .cid-u1jjZn1JXS .mbr-section-title {
+    color: #000000;
+  }
+  .cid-u1jjZn1JXS .mbr-text,
+  .cid-u1jjZn1JXS .mbr-section-btn {
+    color: #000000;
+    text-align: center;
+  }
+  .cid-u1jjZn1JXS .item-title {
+    color: #000000;
+  }
+  .cid-u1jjZn1JXS .content-head {
+    max-width: 800px;
+  }
+</style>
+
+
+<section class="header18 cid-u1jjZn3rKi mbr-fullscreen" data-bg-video="static/assets/images/newcar.mp4" id="video-5-u1jjZn3rKi">
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+    </div>
+  </div>
+</section>
+    <style>
+.cid-u1jjZn3EBk {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-u1jjZn3EBk .item-wrapper img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
+.cid-u1jjZn3EBk .item-wrapper {
+  margin-bottom: 2rem;
+}
+.cid-u1jjZn3EBk .card-title,
+.cid-u1jjZn3EBk .iconfont-wrapper {
+  color: #000000;
+}
+.cid-u1jjZn3EBk .card-text {
+  color: #000000;
+  text-align: center;
+}
+.cid-u1jjZn3EBk .content-head {
+  max-width: 800px;
+}
+.cid-u1jjZn3EBk .mbr-section-title {
+  color: #000000;
+}
+.cid-u1jjZn3EBk .card-title,
+.cid-u1jjZn3EBk .img-wrapper {
+  text-align: center;
+}
+.cid-u1jjZn3EBk .img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+</style>
+<section class="gallery09 cid-u1jjZn1RZK" id="gallery-9-u1jjZn1RZK">
+  <br><br><br>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12 col-lg-4 main-text">
+        <div class="">
+          <h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>Photo Gallery</strong>
+          </h5>
+          <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">
+            Explore our state-of-the-art parking facilities and smart technology through our captivating photo gallery. See the future of parking today!
+          </h6>
+        </div>
+      </div>
+      <div class="col-lg-8 side-features row">
+        <div class="item features-image col-12 col-md-6 col-lg-6 active">
+          <div class="item-wrapper">
+            <div class="item-img">
+              <img src="/static/assets/images/photo-1587409201075-7ffa985e9d2d.jpeg">
+            </div>
+          </div>
+        </div>
+        <div class="item features-image col-12 col-md-6 col-lg-6 active">
+          <div class="item-wrapper">
+            <div class="item-img">
+              <img src="/static/assets/images/photo-1604063155785-ee4488b8ad15.jpeg">
+            </div>
+          </div>
+        </div>
+        <div class="item features-image col-12 col-md-6 col-lg-6 active">
+          <div class="item-wrapper">
+            <div class="item-img">
+              <img src="/static/assets/images/photo-1572634302117-74d5936414ce.jpeg">
+            </div>
+          </div>
+        </div>
+        <div class="item features-image col-12 col-md-6 col-lg-6 active">
+          <div class="item-wrapper">
+            <div class="item-img">
+              <img src="/static/assets/images/photo-1600542431895-dfe1c68eb1c5.jpeg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <style>
+.cid-u1jjZn3rKi .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u1jjZn3rKi .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #000000;
+}
+</style>
+<section class="people05 cid-u1jjZn3EBk" id="testimonials-6-u1jjZn3EBk">
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>SMART PARKING</strong>
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">
+							ParkSmart has made parking a breeze! It&#x27;s convenient, efficient, and a game-changer for parking management.
+						</p>
+					
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">
+							I never knew parking could be this easy. ParkSmart is a lifesaver for anyone who struggles with parking.
+						</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">
+							ParkSmart has truly revolutionized the way we park. It&#x27;s a must-have for anyone who values convenience and efficiency.
+						</p>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    <style>
+.cid-u1jjZn3qoN {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: transparent;
+}
+.cid-u1jjZn3qoN .mbr-text {
+  color: #000000;
+}
+.cid-u1jjZn3qoN .mbr-section-subtitle {
+  color: #000000;
+}
+.cid-u1jjZn3qoN .mbr-section-title {
+  color: #000000;
+  text-align: center;
+}
+.cid-u1jjZn3qoN .mbr-text,
+.cid-u1jjZn3qoN .item .mbr-section-btn {
+  text-align: left;
+}
+.cid-u1jjZn3qoN .item-wrapper {
+  background: #ffffff;
+  margin-bottom: 2rem;
+  padding: 2.25rem;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-u1jjZn3qoN .item-wrapper {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn3qoN .item-wrapper {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+</style>
+<section class="list05 cid-u1jjZn3qoN" id="faq-3-u1jjZn3qoN">
+    <div class="container">
+        <div class="col-12 mb-5 content-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>FAQ</strong>
+            </h3>   
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How do I book a parking slot?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            Simply log in to your ParkSmart account, select your desired slot, and proceed to make the booking and payment.
+                        </p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Can I cancel my booking?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            Yes, you can cancel your booking and receive a refund as per our cancellation policy.
+                        </p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How does the QR code work?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            The QR code is generated upon successful booking and serves as your digital parking pass. Simply scan it at the parking entrance for seamless entry.
+                        </p>
+                    </div>
+                </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>What if I can&#x27;t find my booked slot?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            Our support team is available 24/7 to assist you in locating your booked slot and ensuring a smooth parking experience.
+                        </p>
+                    </div>
+                </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How can owners monitor parking activities?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            Owners and admins have access to a real-time dashboard that provides insights into parking bookings, payments, and user activities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+  .cid-u1jjZn3o7O {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    background-color: transparent;
+  }
+
+  .cid-u1jjZn3o7O .item-mb {
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 767px) {
+    .cid-u1jjZn3o7O .item-mb {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .cid-u1jjZn3o7O .item-head {
+    background: var(--primary-color, #9fe870);
+    padding: 2.25rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .cid-u1jjZn3o7O .item-head {
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .cid-u1jjZn3o7O .item-head {
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .cid-u1jjZn3o7O .item-content {
+    padding: 2.25rem 2.25rem 0;
+    background: #ffffff;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .cid-u1jjZn3o7O .item-content {
+      padding: 0rem 1.5rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .cid-u1jjZn3o7O .item-content {
+      padding: 0rem 1.5rem;
+    }
+  }
+
+  .cid-u1jjZn3o7O .item-wrapper {
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 0rem;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  @media (max-width: 767px) {
+    .cid-u1jjZn3o7O .item-wrapper {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .cid-u1jjZn3o7O .item-wrapper .item-footer {
+      padding: 0 1.5rem 2rem;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .cid-u1jjZn3o7O .item-wrapper .item-footer {
+      padding: 0 2rem 2rem;
+    }
+  }
+
+  .cid-u1jjZn3o7O .btn {
+    width: -webkit-fill-available;
+  }
+
+  .cid-u1jjZn3o7O .item:focus,
+  .cid-u1jjZn3o7O span:focus {
+    outline: none;
+  }
+
+  .cid-u1jjZn3o7O .mbr-section-btn {
+    margin-top: auto !important;
+    padding: 2rem 2rem 0;
+  }
+
+  @media (max-width: 991px) {
+    .cid-u1jjZn3o7O .mbr-section-btn {
+      padding: 0rem 2.25rem 2rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .cid-u1jjZn3o7O .mbr-section-btn {
+      padding: 0rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .cid-u1jjZn3o7O .mbr-section-title {
+    color: #000000;
+  }
+
+  .cid-u1jjZn3o7O .mbr-section-subtitle {
+    color: #ffffff;
+  }
+
+  .cid-u1jjZn3o7O .mbr-text,
+  .cid-u1jjZn3o7O .mbr-section-btn {
+    text-align: left;
+  }
+
+  .cid-u1jjZn3o7O .item-title {
+    text-align: left;
+    color: var(--primary-text, #ffffff);
+  }
+
+  .cid-u1jjZn3o7O .item-subtitle {
+    text-align: left;
+    color: var(--primary-text, #ffffff);
+  }
+
+  .cid-u1jjZn3o7O .content-head {
+    max-width: 800px;
+  }
+</style>
+<section class="pricing1 cid-u1jjZn3o7O" id="pricing-cards-1-u1jjZn3o7O">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head mb-5">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Pricing Plans</strong>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+        <div class="item-wrapper">
+          <div class="item-head">
+            <h5 class="item-title mbr-fonts-style mb-0 display-5">
+              <strong>Basic</strong>
+            </h5>
+            <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+              <strong>$5</strong>/per day
+            </h6>
+          </div>
+          <div class="item-content">
+            <p class="mbr-text mbr-fonts-style display-7">Ideal for occasional parkers who value convenience and efficiency.</p>
+          </div>
+          <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7">Get Started</a></div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+        <div class="item-wrapper">
+          <div class="item-head">
+            <h5 class="item-title mbr-fonts-style mb-0 display-5">
+              <strong>Standard</strong>
+            </h5>
+            <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+              <strong>$15</strong>/per day
+            </h6>
+          </div>
+          <div class="item-content">
+            <p class="mbr-text mbr-fonts-style display-7">Perfect for regular parkers who seek a seamless parking experience.</p>
+          </div>
+          <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7">Get Started</a></div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+        <div class="item-wrapper">
+          <div class="item-head">
+            <h5 class="item-title mbr-fonts-style mb-0 display-5">
+              <strong>Premium</strong>
+            </h5>
+            <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+              <strong>$30</strong>/per day
+            </h6>
+          </div>
+          <div class="item-content">
+            <p class="mbr-text mbr-fonts-style display-7">For frequent parkers who demand top-notch parking convenience and efficiency.</p>
+          </div>
+          <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7">Get Started</a></div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+        <div class="item-wrapper">
+          <div class="item-head">
+            <h5 class="item-title mbr-fonts-style mb-0 display-5">
+              <strong>Enterprise</strong>
+            </h5>
+            <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+              <strong>Custom</strong>/per day
+            </h6>
+          </div>
+          <div class="item-content">
+            <p class="mbr-text mbr-fonts-style display-7">Tailored solutions for businesses and organizations with unique parking needs.</p>
+          </div>
+          <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7">Get Started</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <style>
+    .cid-u1jjZn4LH4 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: transparent;
+    }
+
+    .cid-u1jjZn4LH4 .mbr-fallback-image.disabled {
+        display: none;
+    }
+
+    .cid-u1jjZn4LH4 .mbr-fallback-image {
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .cid-u1jjZn4LH4 .card-wrapper {
+        background: #ffffff;
+    }
+
+    @media (max-width: 767px) {
+        .cid-u1jjZn4LH4 .card-wrapper {
+            padding: 2rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .cid-u1jjZn4LH4 .card-wrapper {
+            padding: 2.25rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .cid-u1jjZn4LH4 .card-wrapper {
+            padding: 4rem;
+        }
+    }
+
+    .cid-u1jjZn4LH4 .mbr-text,
+    .cid-u1jjZn4LH4 .mbr-section-btn {
+        text-align: center;
+    }
+</style>
+<section class="header14 cid-u1jjZn4LH4" id="call-to-action-10-u1jjZn4LH4">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="card col-12 col-md-12 col-lg-10">
+				<div class="card-wrapper">
+					<div class="card-box align-center">
+						<h1 class="card-title mbr-fonts-style mb-4 display-1">
+							<strong>Join ParkSmart Today</strong>
+						</h1>
+						<p class="mbr-text mbr-fonts-style mb-4 display-7">
+							Experience the future of parking with ParkSmart. Sign up now and enjoy hassle-free parking!
+                        </p>
+						<div class="mbr-section-btn mt-4">
+                            <a class="btn btn-primary display-7" href="#">
+                                Sign Up
+                            </a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+    <style>
+.cid-u1jjZn4fcZ {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-u1jjZn4fcZ .mbr-text {
+  color: #000000;
+}
+.cid-u1jjZn4fcZ .mbr-section-subtitle {
+  color: #000000;
+}
+</style>
+<section class="article15 cid-u1jjZn4fcZ" id="generic-text-15-u1jjZn4fcZ">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md">                
+                <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-5">
+                    <strong>ParkSmart - Your Ultimate Parking Solution</strong>
+                </h6>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <p class="mbr-text mbr-fonts-style display-7">At ParkSmart, we&#x27;re committed to redefining the parking experience with innovative technology and seamless solutions.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Join us in revolutionizing the way we park and experience the convenience of smart parking like never before.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Say goodbye to parking hassles and hello to a stress-free parking experience with ParkSmart.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+.cid-u1jjZn4OrA {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-u1jjZn4OrA .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u1jjZn4OrA .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u1jjZn4OrA .title .num {
+  width: 100%;
+  display: block;
+}
+.cid-u1jjZn4OrA .title .card-title {
+  z-index: 1;
+}
+.cid-u1jjZn4OrA .num {
+  color: var(--primary-color, #9fe870);
+  text-align: center;
+}
+.cid-u1jjZn4OrA .item-mb {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn4OrA .item-mb {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-u1jjZn4OrA * {
+    text-align: center !important;
+  }
+  .cid-u1jjZn4OrA .content-column {
+    margin-bottom: 2rem;
+  }
+}
+.cid-u1jjZn4OrA .content-head {
+  max-width: 800px;
+}
+.cid-u1jjZn4OrA .card-text {
+  text-align: center;
+}
+.cid-u1jjZn4OrA .card-title,
+.cid-u1jjZn4OrA .card-img {
+   text-align: center;
+}
+</style>
+<section class="features023 cid-u1jjZn4OrA" id="metrics-1-u1jjZn4OrA">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="card-wrapper mb-5">
+                    <div class="card-box align-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-3">
+                        <span class="num mbr-fonts-style display-1"><strong>100K+</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Happy Users</strong>
+                    </h4>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-3">
+                        <span class="num mbr-fonts-style display-1"><strong>500+</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Parking Locations</strong>
+                    </h4>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-3">
+                        <span class="num mbr-fonts-style display-1"><strong>24/7</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Support Availability</strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+  .cid-u1jjZn5Pnn {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #ffffff;
+  }
+  .cid-u1jjZn5Pnn .item-subtitle {
+    line-height: 1.2;
+    color: #000000;
+  }
+  .cid-u1jjZn5Pnn img,
+  .cid-u1jjZn5Pnn .item-img {
+    width: 100%;
+    height: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .cid-u1jjZn5Pnn .item:focus,
+  .cid-u1jjZn5Pnn span:focus {
+    outline: none;
+  }
+  .cid-u1jjZn5Pnn .item {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 767px) {
+    .cid-u1jjZn5Pnn .item {
+      margin-bottom: 1rem;
+    }
+  }
+  .cid-u1jjZn5Pnn .item-wrapper {
+    position: relative;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .cid-u1jjZn5Pnn .mbr-section-title {
+    color: #232323;
+  }
+  .cid-u1jjZn5Pnn .mbr-text,
+  .cid-u1jjZn5Pnn .mbr-section-btn {
+    color: #232323;
+  }
+  .cid-u1jjZn5Pnn .item-title {
+    color: #232323;
+  }
+  .cid-u1jjZn5Pnn .content-head {
+    max-width: 800px;
+  }
+</style>
+<section class="features03 cid-u1jjZn5Pnn" id="events-1-u1jjZn5Pnn">
+	<div class="container-fluid">
+		<div class="row justify-content-center mb-5">
+			<div class="col-12 content-head">
+				<div class="mbr-section-head">
+					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+						<strong>Upcoming Events</strong>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-image col-12 col-md-6 col-lg-3 active">
+				<div class="item-wrapper">
+					<div class="item-img mb-3">
+						<img src="/static/assets/images/photo-1586137409255-16b910bdabe0.jpeg">
+					</div>
+					<div class="item-content align-left">
+						<h6 class="item-subtitle mbr-fonts-style mb-3 display-5">
+							<strong><a class="text-black fw-bold" href="#">Smart Parking Webinar</a></strong>
+						</h6>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">Feb 15, 2024</p>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">Join us for an insightful webinar on the future of smart parking technology and its impact on urban development.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item features-image col-12 col-md-6 col-lg-3">
+				<div class="item-wrapper">
+					<div class="item-img mb-3">
+						<img src="/static/assets/images/photo-1600266511717-1cf08f902b56.jpeg" data-slide-to="1" data-bs-slide-to="1">
+					</div>
+					<div class="item-content align-left">
+						<h6 class="item-subtitle mbr-fonts-style mb-3 display-5">
+							<strong><a class="text-black fw-bold" href="#">ParkSmart Launch Party</a></strong>
+						</h6>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">Mar 10, 2024</p>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">Celebrate the launch of ParkSmart with us! Join us for an evening of fun, networking, and exciting announcements.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item features-image col-12 col-md-6 col-lg-3">
+				<div class="item-wrapper">
+					<div class="item-img mb-3">
+						<img src="/static/assets/images/photo-1572701190287-8666104be064.jpeg" data-slide-to="2" data-bs-slide-to="2">
+					</div>
+					<div class="item-content align-left">
+						<h6 class="item-subtitle mbr-fonts-style mt-0 mb-3 display-5">
+							<strong><a class="text-black fw-bold" href="#">Smart City Expo</a></strong>
+						</h6>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">Apr 20, 2024</p>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">Visit our booth at the Smart City Expo and witness the future of parking technology in action.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item features-image col-12 col-md-6 col-lg-3">
+				<div class="item-wrapper">
+					<div class="item-img mb-3">
+						<img src="/static/assets/images/photo-1621929747188-0b4dc28498d2.jpeg" data-slide-to="3" data-bs-slide-to="3">
+					</div>
+					<div class="item-content align-left">
+						<h6 class="item-subtitle mbr-fonts-style mt-0 mb-3 display-5">
+							<strong><a class="text-black fw-bold" href="#">Parking Innovation Summit</a></strong>
+						</h6>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">May 15, 2024</p>
+						<p class="mbr-text mbr-fonts-style mb-3 display-7">Join industry leaders and innovators at the Parking Innovation Summit to explore the latest trends and advancements in parking technology.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    <style>
+.cid-u1jjZn7TFc {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #000000;
+}
+.cid-u1jjZn7TFc .social-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cid-u1jjZn7TFc .social-row .soc-item {
+  margin: 8px;
+}
+.cid-u1jjZn7TFc .social-row .soc-item a:hover .mbr-iconfont,
+.cid-u1jjZn7TFc .social-row .soc-item a:focus .mbr-iconfont {
+  background-color: #ffffff;
+}
+.cid-u1jjZn7TFc .social-row .soc-item a .mbr-iconfont {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 32px;
+  background-color: #edefeb;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.cid-u1jjZn7TFc .row-links {
+  width: 100%;
+  justify-content: center;
+}
+.cid-u1jjZn7TFc .header-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+}
+.cid-u1jjZn7TFc .header-menu li {
+  padding: 0 1rem 1rem 1rem;
+}
+.cid-u1jjZn7TFc .header-menu li p {
+  margin: 0;
+}
+.cid-u1jjZn7TFc .copyright {
+  margin-bottom: 0;
+  color: #ffffff;
+  text-align: center;
+}
+.cid-u1jjZn7TFc .mbr-section-title {
+  color: #ffffff;
+}
+
+</style> 
+<section class="footer3 cid-u1jjZn7TFc" once="footers" id="footer-6-u1jjZn7TFc">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <p class="mbr-fonts-style copyright display-7">
+                    © 2024 ParkSmart. All Rights Reserved.
+                </p>
+            </div>
+</section>
+
+<script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="/static/assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="/static/assets/ytplayer/index.js"></script>
+  <script src="/static/assets/theme/js/script.js"></script>
+  <script src="/static/assets/formoid/formoid.min.js"></script>
+  
+  <script>
+
+    (function(){
+      var animationInput = document.createElement('input');
+      animationInput.setAttribute('name', 'animation');
+      animationInput.setAttribute('type', 'hidden');
+      document.body.append(animationInput);
+    })();
+
+  </script>
+</body>
+</html>

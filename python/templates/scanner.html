@@ -1,0 +1,119 @@
+{% include 'adminheader.html' %}
+
+<br><br><br>
+
+<center>
+    <body>
+        <video id="qr-video" width="640" height="480" playsinline></video>
+        <div id="result"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jsqr@1.0.0/dist/jsQR.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const video = document.getElementById('qr-video');
+                const resultDiv = document.getElementById('result');
+
+                navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+                    .then((stream) => {
+                        video.srcObject = stream;
+                        video.play();
+                        scanQRCode();
+                    })
+                    .catch((error) => {
+                        console.error('Error accessing camera:', error);
+                        resultDiv.innerText = 'Error accessing camera. Please check permissions.';
+                    });
+
+                function scanQRCode() {
+                    const canvasElement = document.createElement('canvas');
+                    const canvas = canvasElement.getContext('2d');
+
+                    video.addEventListener('loadeddata', () => {
+                        setInterval(() => {
+                            canvasElement.width = video.videoWidth;
+                            canvasElement.height = video.videoHeight;
+                            canvas.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+
+                            const imageData = canvas.getImageData(0, 0, video.videoWidth, video.videoHeight);
+                            const code = jsQR(imageData.data, imageData.width, imageData.height);
+
+                            if (code && code.data) {
+                                resultDiv.innerText = 'QR Code detected: ' + code.data;
+
+                                // Send the detected QR code data to the Flask server
+                                sendQRCodeToServer(code.data);
+                            } else {
+                                resultDiv.innerText = 'No QR Code detected.';
+                            }
+                        }, 1000); // Adjust the interval as needed
+                    });
+                }
+
+                function sendQRCodeToServer(qrCodeData) {
+                    // Make a POST request to the Flask server
+                    fetch('/process_qr_code', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ qrCodeData: qrCodeData }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Server response:', data);
+                        console.log('viData:', data['vi']);
+
+                        let viData = data['vi'] || [];
+                        // alert(viData);
+
+                        displayViData(viData);
+                    })
+                    .catch(error => {
+                        console.error('Error sending QR code data to server:', error);
+                    });
+                }
+
+                function displayViData(viData) {
+                    const tableBody = document.getElementById('viDataBody');
+                    tableBody.innerHTML = ''; 
+
+                    viData.forEach(detail => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${detail['first_name']} ${detail['last_name']}</td>
+                            <td>${detail['email']}</td>
+                            <td>${detail['name']}</td>
+                            <td>${detail['starting_date']}</td>
+                            <td>${detail['starting_time']}</td>
+                            <td>${detail['ending_date']}</td>
+                            <td>${detail['ending_time']}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                }
+            });
+        </script>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Slot</th>
+            <th>Starting Date</th>
+            <th>Starting Time</th>
+            <th>Ending Date</th>
+            <th>Ending Time</th>
+        </tr>
+    </thead>
+    <tbody id="viDataBody">
+
+    </tbody>
+</table>
+
+    </body>
+</center>
+
+<br><br><br>
+
+{% include 'footer.html' %}

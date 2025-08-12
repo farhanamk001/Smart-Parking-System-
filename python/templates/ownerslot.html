@@ -1,0 +1,33 @@
+{% include 'ownerheader.html' %}
+<br><br><br>
+
+<h2 align="center">SLOT REGISTRATION</h2>
+<br><br>
+<center>
+	<form method="post">
+		<table class="table" style="width: 800px;">
+			<tr>
+				<th>Slot</th>
+				<td><input type="text" name="desc" required class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Location</th>
+				<td><select name="loc" class="form-control">
+					{% for i in data['view'] %}
+					<option value="{{i['location_id']}}">{{i['location_name']}}</option>
+					{% endfor %}
+				</select>
+				</td>
+			</tr>  
+			<tr>
+				<th>Amount</th>
+				<td><input type="text" name="amt" required class="form-control"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" name="submit" value="submit" class="btn btn-success"></td>
+			</tr>
+			
+		</table>		
+	</form>
+</center>
+{%include 'footer.html' %}
