@@ -22,4 +22,16 @@ Smart Parking Bill System – An AI-powered parking management solution using AN
 1. Vehicle enters → License plate detected via YOLO.  
 2. Plate text extracted using PyTesseract.  
 3. Entry time, plate number, and parking slot stored in Firebase.  
-4. On exit, duration calculated and bill generated automatically.  
+4. On exit, duration calculated and bill generated automatically.
+  
+![IMG_1690](https://github.com/user-attachments/assets/d6ab0bff-cd8f-432c-aee3-e3175bddc7c7)
+
+![IMG_1692](https://github.com/user-attachments/assets/175748e8-7f2a-462f-872e-20c5a753e2eb)
+
+![IMG_1693](https://github.com/user-attachments/assets/d204cd55-8098-4f39-a811-1873ba246c8f)
+
+![IMG_1691](https://github.com/user-attachments/assets/f2c42cfe-9840-47e9-939d-96971c91ae21)
+
+![IMG_1694](https://github.com/user-attachments/assets/0e97c41b-2fdf-4c20-b135-97c07f08c7d3)
+
+![IMG_1695](https://github.com/user-attachments/assets/80680aa9-fd71-40a0-9045-aaa473fac826)
